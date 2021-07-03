@@ -8,7 +8,11 @@ public class stockmngt {
 //Direct commit to master branch to demo conflicts
 	@Test
 	public void addFreshStock()
-	{}
+	{
+		System.out.println("ADDING FRESH STOCK");
+		
+		
+	}
 	
 	
 	public void modifyStock()
