@@ -23,7 +23,7 @@ public class stockmngt {
 	
 	public void verifyStockInList()
 	{
-		//Added My DevFeatureBranchUSer
+		//Added My DevFeatureBranchUSer....
 		System.out.println("verifyING StockInList");
 	}
 	
