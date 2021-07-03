@@ -24,7 +24,7 @@ public class stockmngt {
 	public void verifyStockInList()
 	{
 		//Added My DevFeatureBranchUSer....
-		System.out.println("verifyING StockInList");
+		System.out.println("verifyING DEVVVV StockInList");
 	}
 	
 	public void verifyQuantity()
