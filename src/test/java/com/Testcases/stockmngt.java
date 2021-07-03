@@ -25,9 +25,14 @@ public class stockmngt {
 	{
 		//Added My DevFeatureBranchUSer....
 		System.out.println("verifyING DEVVVV StockInList");
+		
 	}
 	
 	public void verifyQuantity()
-	{}
+	{
+		
+		//Merge Demo via Git CLI from local....
+		
+	}
 	
 }
