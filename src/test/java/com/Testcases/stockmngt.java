@@ -4,7 +4,8 @@ import org.testng.annotations.Test;
 
 public class stockmngt {
 
-	
+// Added comment to say this is Test annotation
+
 	@Test
 	public void addFreshStock()
 	{}
