@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Portfolio Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name=" Actual Portfolio Creation Test(failed)">
+    <classes>
+      <class name="Testcases.CreatePortfolioTest">
+        <methods>
+          <include name="createPortfolioTest"/>
+        </methods>
+      </class> <!-- Testcases.CreatePortfolioTest -->
+    </classes>
+  </test> <!--  Actual Portfolio Creation Test(failed) -->
+</suite> <!-- Failed suite [Portfolio Suite] -->
