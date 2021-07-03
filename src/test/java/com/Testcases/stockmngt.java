@@ -22,7 +22,11 @@ public class stockmngt {
 	}
 	
 	public void verifyStockInList()
-	{}
+	{
+		
+		//Added My DevFeatureBranchUSer....
+		System.out.println("verifyING StockInList");
+	}
 	
 	public void verifyQuantity()
 	{}
