@@ -16,7 +16,10 @@ public class stockmngt {
 	
 	
 	public void modifyStock()
-	{}
+	{
+		
+		System.out.println("MODIFYING STOCK");
+	}
 	
 	public void verifyStockInList()
 	{}
