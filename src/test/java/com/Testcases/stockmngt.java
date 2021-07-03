@@ -32,7 +32,7 @@ public class stockmngt {
 	public void verifyQuantity()
 	{
 		
-		//Merge Demo via Git CLI from local....
+		//Merge Demo via Git CLI from local
 		
 	}
 	
