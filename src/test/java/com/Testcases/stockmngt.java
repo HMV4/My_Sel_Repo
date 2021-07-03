@@ -33,6 +33,7 @@ public class stockmngt {
 	{
 		
 		//Merge Demo via Git CLI from local
+		//Revert Demo
 		
 	}
 	
