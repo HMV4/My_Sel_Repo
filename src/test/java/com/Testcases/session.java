@@ -10,7 +10,7 @@ public class session extends Testbase {
 	@Test
 	public void doLogin()
 	{
-		System.out.println("HITUJ LOGING...... USING doLOGIN()");
+		System.out.println("HITUJ...... LOGING...... USING doLOGIN()");
 		
 		
 	}
