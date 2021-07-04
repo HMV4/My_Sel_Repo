@@ -11,6 +11,7 @@ public class session extends Testbase {
 	public void doLogin()
 	{
 		System.out.println("VIJAY LOGING...... USING doLOGIN()");
+		System.out.println("VIJAY ...... USING doLOGIN()");
 		
 		
 	}
