@@ -11,7 +11,9 @@ public class portfoliomngt extends Testbase {
 
 		System.out.println("====Calling createPortfolio() Test ======");
         app.OpenBrowser("Chrome");
+        //Closing browser
         app.closeBrowser();
+        System.out.println("Closed");
 	}
 
 	@Test

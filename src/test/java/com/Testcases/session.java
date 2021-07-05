@@ -12,6 +12,8 @@ public class session extends Testbase {
 	{
 		System.out.println("HITUJ LOGING...... USING doLOGIN()");
 		System.out.println("VIJAY ...... USING doLOGIN()");
+		System.out.println("VIJAY ...... USING doLOGIN()");
+
 		
 		
 	}

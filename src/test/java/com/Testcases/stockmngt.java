@@ -10,6 +10,7 @@ public class stockmngt {
 	public void addFreshStock()
 	{
 		System.out.println("ADDING FRESH STOCK");
+		System.out.println("MONDAY STOCK()");
 		
 		
 	}
