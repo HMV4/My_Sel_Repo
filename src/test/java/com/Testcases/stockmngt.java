@@ -11,6 +11,7 @@ public class stockmngt {
 	{
 		System.out.println("ADDING FRESH STOCK");
 		System.out.println("MONDAY STOCK()");
+		System.out.println("TUESDAY STOCK()");
 		
 		
 	}
