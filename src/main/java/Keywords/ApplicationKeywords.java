@@ -13,7 +13,7 @@ import com.aventstack.extentreports.ExtentTest;
 public class ApplicationKeywords extends ValidationKeywords{
 	
 	
-	public ApplicationKeywords() throws FileNotFoundException
+	public ApplicationKeywords(ExtentTest extentTest) throws FileNotFoundException
 	{
 		
 		prop = new Properties();
@@ -45,9 +45,17 @@ public class ApplicationKeywords extends ValidationKeywords{
 		
 	}
 
-	public void login()
+	public void defaultLogin() throws InterruptedException
 	{
-		
+		navigate("url");
+		System.out.println("Default login......................");
+		waitForPageToLoad();
+		type("usernameId_xpath","usernameValue");
+		type("passwordLocator_xpath","passwordValue");
+		click("signInButton_xpath");
+		Thread.sleep(2000);
+		waitForPageToLoad();
+		wait(5);
 	}
 	
 	public void selectDateFromCalender()

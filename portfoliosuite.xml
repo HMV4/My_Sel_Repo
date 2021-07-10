@@ -37,6 +37,7 @@
     </classes>
   </test> <!-- Test -->
   
+  <!-- 
   <test  name=" Actual Portfolio Creation Test">
     <classes>
       <class name="Testcases.CreatePortfolioTest">
@@ -45,6 +46,7 @@
       	</methods>
       </class>
     </classes>
-  </test> <!-- Test -->
+  </test> 
+   -->
   
 </suite> <!-- Suite -->

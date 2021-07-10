@@ -22,23 +22,36 @@ public class Testbase {
 	public ExtentTest extentTest;
 	
 	@BeforeTest(alwaysRun = true)
-	public void beforeTest(ITestContext context) throws FileNotFoundException
+	public void beforeTest(ITestContext context) throws FileNotFoundException, InterruptedException
 	{
 		System.out.println("====BEFORE TEST ANNOTATION ========	");
 		
       // Single object session for all the test i.e @Test		
-		   app = new ApplicationKeywords(); 
+		  // app = new ApplicationKeywords(); 
+		//app = new ApplicationKeywords();
 		  context.setAttribute("app", app);
 		 //Initialize reports before every test starts 
 		  Extreports = extentReport.getReports();
+		  
 		 extentTest= Extreports.createTest(context.getCurrentXmlTest().getName());
+		 
 		 extentTest.log(Status.INFO,"Starting Test"+context.getCurrentXmlTest().getName());
  		// Inside application keyword class object sent reporting  
+		 
+	
+		 //Default login everytime
+		 app = new ApplicationKeywords(extentTest);
+		 app.OpenBrowser("chrome");
+		 app.defaultLogin();
+	
 		 app.setReport(extentTest);
+		 
      // Setting context for extent report and Test so that we can maintain same session of object to get single report
 		 
-		 context.setAttribute("Extreports", Extreports);
-		 context.setAttribute("extentTest", extentTest);
+		 context.setAttribute("Extreports",Extreports);
+		 context.setAttribute("extentTest",extentTest);
+		 //context.setAttribute("applicationKeywords",app);
+		 context.setAttribute("app", app);
 		  
 	}
 	
