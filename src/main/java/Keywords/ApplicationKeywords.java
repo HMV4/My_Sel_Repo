@@ -4,8 +4,11 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.List;
 import java.util.Properties;
 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.ExtentTest;
@@ -52,10 +55,9 @@ public class ApplicationKeywords extends ValidationKeywords{
 		waitForPageToLoad();
 		type("usernameId_xpath","usernameValue");
 		type("passwordLocator_xpath","passwordValue");
-		click("signInButton_xpath");
 		Thread.sleep(2000);
-		waitForPageToLoad();
-		wait(5);
+		click("signInButton_xpath");
+		
 	}
 	
 	public void selectDateFromCalender()
@@ -65,6 +67,26 @@ public class ApplicationKeywords extends ValidationKeywords{
 	public void verifyStockAdded()
 	{
 		
+	}
+	
+	
+	public void verifyPortfolioAdded(String locatorKey,String data)
+	{
+		//selectByvisibletext("portfolioDropdown_xpath","portfolioValue");
+		List<WebElement> PortfolioNames= new Select(getElement(locatorKey)).getOptions();
+		for(WebElement PortfolioOptions :PortfolioNames )
+		{
+			if(PortfolioOptions.getText().equals(prop.getProperty(data)))
+			{
+				
+				System.out.println("Portfolio created successfully" +prop.getProperty(data));
+			}
+			
+		}
+		
+		
+	
+
 	}
 	
 	//method to provide facility to use logging in every available function of application level keyword
