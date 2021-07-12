@@ -71,7 +71,7 @@ public class GenericKeywords extends extentReport {
 
 	}
 
-	// Click function
+	// Click function for click operations on WEB
 	public void click(String locatorKey) throws InterruptedException {
 		System.out.println("Clicking on Locator....");
 		log("Clicking on Locator...." + locatorKey);
